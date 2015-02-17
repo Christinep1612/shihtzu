@@ -1,0 +1,500 @@
+body{
+	max-width: 1200px;
+	background-image: url("http://www.ohmyshihtzu.com/wp-content/uploads/2015/02/heartbackground.png");
+	min-height: 200px;
+	margin:0 auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px
+  font-weight:300;
+  line-height: 1.5;
+
+}
+#section1{
+  max-width: 1200px;
+  background-color: #FFFFFF;
+  max-height: auto;
+  margin:-50;
+
+}
+#nav2{
+	margin: center;
+  width: 1200px;
+	height: 40px;
+	background-color:#9AD4D5;
+	
+}
+  
+#ul2 {
+    width: 100%;
+    list-style-type: none;
+    padding: 10px;
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 600px;
+    overflow: hidden;
+
+}     
+
+header{
+	width: 1000px;
+	height:200px;
+  margin-left: 175px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#logo{
+	margin: center;
+}
+
+#nav{
+	width: 1000px;
+	height: 35px;
+  padding: 18px;
+  margin-left: 100px;
+	background-color:#9AD4D5;
+  font-size: 20px;
+
+ } 
+
+#ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+li {
+   display: inline;
+ }
+
+section p a:link{
+  text-decoration: underline;
+  color: #9AD4D5;
+  width: 0px;
+  font-weight: normal;
+  background-color: transparent;
+  text-align: left;
+  padding: 0px;
+  text-transform: none;
+}
+
+section p a:visited{
+  color:#9ABC6A;
+}
+a:link, a:visited {
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #9AD4D5;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section{
+  width:600px;
+  margin-left: 100px;
+  min-height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #F3F1F0;
+}
+
+#ul3 {
+    width: 100%;
+    list-style-type: circle;
+    padding: 10px;
+    font-size: 12px;
+    overflow: hidden;
+}
+#sidebar{
+  width: 300px;
+  height: 2000;
+  float: right;
+  padding-right: 100px;
+  margin-right: 65px;
+  margin-left: 15px;
+  padding: 25px;
+  background-color: #F3F1F0;
+
+}
+/*-------------/Gallery --------------*/
+@keyframes captionfade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+body { 
+  color: #444; 
+  font-family: Avenir, sans-serif; 
+}
+div#o-gallery { 
+  display: flex; 
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+div#o-gallery figure { 
+  position: relative; 
+  flex: 1; 
+  max-width: 500px;
+  transition: 1s; 
+  margin: 0; 
+}
+div#o-gallery img { 
+  width: 200px;
+  max-height: 200px;
+  border: 1px solid;
+  object-fit: cover;
+  object-position: 0% 0%;
+  transition: 1s;
+  font-size: 0;
+  line-height: 0;
+}
+div#o-gallery figure:hover { flex: 2; }
+div#o-gallery figcaption { 
+  position: absolute;
+  top: 43%; 
+  left: 105%; 
+  opacity: 0; 
+  width: 50%; 
+}
+div#o-gallery figure:hover img { 
+  width: 100%; 
+  max-height: 700px; 
+  object-fit: center; 
+}
+div#o-gallery figure:hover figcaption { 
+  animation: captionfade forwards 1s 1s; 
+}
+div#o-gallery figure:nth-child(2) { text-align: center; }
+div#o-gallery figure:nth-child(2) figcaption { text-align: left; }
+div#o-gallery figure:last-child { text-align: right; }
+div#o-gallery figure:last-child figcaption { left: -55%; }
+
+@media all and (max-width: 600px) {
+  div#o-gallery { flex-direction: column; }
+  div#o-gallery figcaption { 
+    top: 102%; 
+    left: 0; 
+    width: 30%; 
+  }
+  div#o-gallery figure { max-width: 100%; }
+  div#o-gallery img { 
+    border: none; 
+    text-align: center; 
+  }
+div#o-gallery figure:nth-child(2) figcaption, div#o-gallery figure:last-child figcaption  {
+  top: -11%; 
+  left: auto; 
+  right: 0; 
+  width: 25%; 
+}
+div#o-gallery figure:last-child figcaption { top: -18%;}
+}
+@media all and (max-width: 400px) {
+div#o-gallery figure:hover { margin-bottom: 4rem; }
+div#o-gallery figcaption, div#o-gallery figure:nth-child(2) figcaption, div#o-gallery figure:last-child figcaption { 
+  width: 100%; 
+  text-align: center; 
+}
+div#o-gallery figure:nth-child(2) figcaption { top: -7%; }
+div#o-gallery figure:nth-child(3) figcaption { top: -9%; }
+div#o-gallery figure:nth-child(2):hover, div#o-gallery figure:nth-child(3):hover { margin-top: 4rem; margin-bottom: 0; }
+}
+
+/*-------------/Form Discription --------------*/
+
+#feedback-page{
+  text-align:center;
+}
+
+#form-main{
+  width:50%;
+  margin:0 auto;
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:50px;
+  background-color: #9ABC6A ;
+   -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+#form-div {
+
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top:30px;
+  margin-left: -260px;
+ 
+}
+
+.feedback-input {
+  color:#3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #F2A5A;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #F2A5A;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+  color:#30aed6;
+  border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#comment{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+#button-blue{
+
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #9AD4D5;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+  background-color: rgba(0,0,0,0);
+  color: #0493bd;
+}
+  
+.submit:hover {
+  color: #3498db;
+}
+  
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 480px) {
+  #form-div, {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+}
+
+/* ------------- News Info ------------ */
+
+.content-wrap {
+    width: 1000px;
+    
+}
+.content-wrap section {
+    position: relative;
+       
+}
+
+.content-wrap section section {
+    background: none;
+    margin: 0;
+}
+.content-wrap section .row {
+    
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.content-wrap section .row .col {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 290px;
+}
+.content-wrap section .row .mid  {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.content-wrap section .no-bottom-margin{
+    margin-bottom: 0;
+}
+.content-wrap section .primary {
+    float: left;
+    width: 620px;
+}
+.content-wrap section .primary p.intro {
+    /* margin: 15px 0 10px 0; */
+   
+}
+.content-wrap section aside {
+    float: right;
+    width: 285px;
+}
+.content-wrap section aside h2 {
+    margin: 12.5px 0 12.5px 0;
+}
+
+.content-wrap section aside ul.link-list {
+    font-size: 16px;
+    margin: 0 0 25px 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.content-wrap section aside ul.link-list li {
+    padding-left: 3px;
+}
+.content-wrap section aside ul.link-list li a {
+    display: block;
+    color: #3B3B3B;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+}
+.content-wrap section aside ul.link-list li a:hover,
+.content-wrap section aside ul.link-list li a:focus,
+.content-wrap section aside ul.link-list li a:active {
+    color: #285935;
+}
+
+.content-wrap section aside .testimonials blockquote {
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 27px;
+    
+    margin: 12.5px 0;
+}
+.content-wrap section aside .testimonials blockquote p {
+    margin-bottom: 0;
+}
+.content-wrap section aside .testimonials blockquote cite {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.content-wrap section .back-to-top {
+    display: block;
+    position: absolute;
+    bottom: -65px;
+    right: 10px;
+    height: 43px;
+    width: 43px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.ie7 .content-wrap section .back-to-top {
+    bottom: -70px;
+}
+
+/*------- Share Buttons -----*/
+
+#share-buttons img {
+background-color: transparent;
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+} 
+
+section {
+  width: 996px;
+  padding: 20px;
+}
+
+
+footer{
+  background-color: #9AD4D5;
+  text-align: center;
+  font-size: 12px;
+  color: #FFFCFC;
+  width: 1180px;
+  height: 40px;
+  padding: 10px;
+ 
+}
+
